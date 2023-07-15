@@ -19,6 +19,9 @@
                             <button
                                 class="px-4 py-2 rounded-lg bg-gray-700 hover:scale-105 active:scale-95 transition duration-300">Shorten</button>
                         </div>
+                        @error('original')
+                            <p class="text-red-500">{{ $message }}</p>
+                        @enderror
                     </form>
 
                 </div>
